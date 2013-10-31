@@ -12,16 +12,17 @@ from TwtSummation import tweetScoreCalcu
 
 Connection_Config = [line.strip() for line in open('res/DatabaseConfig/Connections', 'r')]
 
+
 def MS_SqlServer_Method(ApiResult):
 	"""
 
 
 	"""
 	conn = pymssql.connect(
-		host=Connection_Config[0].split('\t')[0],
-		user=Connection_Config[0].split('\t')[1],
-		password=Connection_Config[0].split('\t')[2],
-		database=Connection_Config[0].split('\t')[3]
+		host = Connection_Config[0].split('\t')[0],
+		user = Connection_Config[0].split('\t')[1],
+		password = Connection_Config[0].split('\t')[2],
+		database = Connection_Config[0].split('\t')[3]
 	)
 	cur = conn.cursor()
 
@@ -32,17 +33,19 @@ def MS_SqlServer_Method(ApiResult):
 		print "ID=%d" % (row[0])
 		row = cur.fetchone()
 
+
 def MY_SQL_Method(ApiResult):
 	"""
 
 
 	"""
 	conn = MySQLdb.connect(
-		host=Connection_Config[1].split('\t')[0],
-		user=Connection_Config[1].split('\t')[1],
-		passwd=Connection_Config[1].split('\t')[2],
-		db=Connection_Config[1].split('\t')[3]
+		host = Connection_Config[1].split('\t')[0],
+		user = Connection_Config[1].split('\t')[1],
+		passwd = Connection_Config[1].split('\t')[2],
+		db = Connection_Config[1].split('\t')[3]
 	)
+
 
 def MongoDB_Insertion(inputObject):
 	"""
@@ -75,18 +78,23 @@ def MongoDB_Insertion(inputObject):
 			jsonstr = str(f)
 			TempJson = json.loads(jsonstr)
 			TempJson.update({"_id": TempJson['id']})
-#			print [key for key in TempJson.keys()]
+			#			print [key for key in TempJson.keys()]
 			if TempJson.get('urls'):
 				TempJson.update({"urls": "ILLEGAL"})
 			if flag is 1:
 				TempJson['retweeted_status'].update({"urls": "ILLEGAL"})
-			(Score, Method) = tweetScoreCalcu(TempJson['text'].encode('UTF-8').replace('\n', '').replace('\r', '').strip())
+			(Score, Method) = tweetScoreCalcu(
+				TempJson['text'].encode('UTF-8').replace('\n', '').replace('\r', '').strip())
 			methodList = []
 			methodList.append({"method": Method, "score_num": Score})
 			TempJson.update({"pj_scoreObj": methodList})
-			TempJson.update({"pj_kwdlist": Str2KList(TempJson['text'].encode('UTF-8').replace('\n', '').replace('\r', '').strip(), KeywordsList=KeywordsList)})
-			TempJson.update({"pj_UTCtime": calendar.timegm(time.strptime(TempJson['created_at'], '%a %b %d %H:%M:%S +0000 %Y'))})
-			tmpCollct = database[time.strftime("%d-%b-%Y", time.strptime(TempJson['created_at'], '%a %b %d %H:%M:%S +0000 %Y'))]
+			TempJson.update({
+				"pj_kwdlist": Str2KList(TempJson['text'].encode('UTF-8').replace('\n', '').replace('\r', '').strip(),
+				                        KeywordsList = KeywordsList)})
+			TempJson.update(
+				{"pj_UTCtime": calendar.timegm(time.strptime(TempJson['created_at'], '%a %b %d %H:%M:%S +0000 %Y'))})
+			tmpCollct = database[
+				time.strftime("%d-%b-%Y", time.strptime(TempJson['created_at'], '%a %b %d %H:%M:%S +0000 %Y'))]
 			# tmpCollct = database['foo']
 			try:
 				tmpCollct.insert(TempJson)

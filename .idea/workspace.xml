@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ec006ab-10bc-4d72-85c9-ff25c5992c57" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apriori.py" afterPath="$PROJECT_DIR$/Apriori.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twtCrawler.py" afterPath="$PROJECT_DIR$/twtCrawler.py" />
+    <list default="true" id="0ec006ab-10bc-4d72-85c9-ff25c5992c57" name="Default" comment="updating codes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DatabaseDroppor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TermWeightUpdator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmpMain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB_Connection.py" afterPath="$PROJECT_DIR$/DB_Connection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseTrans.py" afterPath="$PROJECT_DIR$/DatabaseTrans.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TwitterDataRetriever.iws" />
@@ -24,6 +27,11 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="TwitterDataRetriever" />
@@ -42,7 +50,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0" vertical-offset="1353" max-vertical-offset="2057">
+            <state line="69" column="0" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
@@ -51,7 +59,7 @@
       <file leaf-file-name="Freqencycounting.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Freqencycounting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="11" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2057">
+            <state line="18" column="11" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="2023">
               <folding />
             </state>
           </provider>
@@ -60,7 +68,7 @@
       <file leaf-file-name="TwtSummation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwtSummation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="28" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="748">
+            <state line="22" column="20" selection-start="608" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -78,27 +86,34 @@
       <file leaf-file-name="DB_Connection.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DB_Connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="16" selection-start="1253" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1717">
+            <state line="84" column="72" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Apriori.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Apriori.py">
+      <file leaf-file-name="TermWeightUpdator.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TermWeightUpdator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="23" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.38352272" vertical-offset="920" max-vertical-offset="1649">
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
+            <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseTrans.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DatabaseTrans.py">
+      <file leaf-file-name="DatabaseDroppor.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DatabaseDroppor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="34" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="1462">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tmpMain.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tmpMain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.024079321" vertical-offset="0" max-vertical-offset="706">
               <folding />
             </state>
           </provider>
@@ -107,7 +122,7 @@
       <file leaf-file-name="twtCrawler.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twtCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="1904">
+            <state line="7" column="41" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -132,22 +147,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/TweetsClassifier.py" />
-        <option value="$PROJECT_DIR$/TwtSummation.py" />
-        <option value="$PROJECT_DIR$/res/TestingSets/Neg" />
-        <option value="$PROJECT_DIR$/res/TestingSets/Pos" />
         <option value="$PROJECT_DIR$/String2KwdList.py" />
-        <option value="$PROJECT_DIR$/DatabaseTrans.py" />
         <option value="$PROJECT_DIR$/Results/131009/WTOPrecent.txt" />
         <option value="$PROJECT_DIR$/Results/131009/WordsCounting.txt" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/res/Weights/weights.ddottwt" />
         <option value="C:/Python27/Lib/string.py" />
         <option value="$PROJECT_DIR$/Freqencycounting.py" />
-        <option value="$PROJECT_DIR$/DB_Connection.py" />
         <option value="$PROJECT_DIR$/RetrieveUsers.py" />
         <option value="$PROJECT_DIR$/twtCrawler.py" />
         <option value="$PROJECT_DIR$/Apriori.py" />
+        <option value="$PROJECT_DIR$/DB_Connection.py" />
+        <option value="$PROJECT_DIR$/DatabaseTrans.py" />
+        <option value="$PROJECT_DIR$/DatabaseDropping.py" />
+        <option value="$PROJECT_DIR$/TermWeightUp.py" />
+        <option value="$PROJECT_DIR$/tmpMain.html" />
+        <option value="$PROJECT_DIR$/tmpMain.py" />
       </list>
     </option>
   </component>
@@ -183,7 +198,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,17 +232,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysite" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -416,6 +433,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -437,9 +457,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -480,6 +497,12 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="4">
@@ -525,7 +548,11 @@
       <created>1383059664841</created>
       <updated>1383059664841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updating codes">
+      <created>1383234845580</created>
+      <updated>1383234845580</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -550,14 +577,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.264375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25032175" sideWeight="0.6150685" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.243125" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3849315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33516484" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -581,44 +608,15 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="remove pyc" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove pyc" />
+    <MESSAGE value="updating codes" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating codes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/twtCrawler.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="44" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DB_Connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="16" selection-start="1253" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apriori.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="23" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseTrans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="34" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twtCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="1904">
@@ -641,13 +639,6 @@
         <state line="21" column="55" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.50710225" vertical-offset="0" max-vertical-offset="11033" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Freqencycounting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2057">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="0" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0" vertical-offset="1353" max-vertical-offset="2057">
@@ -662,20 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseTrans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="34" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB_Connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="16" selection-start="1253" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="1138" max-vertical-offset="1581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/String2KwdList.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="12" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
@@ -683,26 +660,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwtSummation.py">
+    <entry file="file://$PROJECT_DIR$/Apriori.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="28" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="54" column="10" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="1649">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twtCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="1819">
+        <state line="7" column="41" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apriori.py">
+    <entry file="file://$PROJECT_DIR$/DatabaseTrans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="23" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.38352272" vertical-offset="920" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
+        <state line="35" column="23" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="907" max-vertical-offset="1598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB_Connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="72" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TermWeightUpdator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freqencycounting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="11" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwtSummation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="20" selection-start="608" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseDroppor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="706">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmpMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.024079321" vertical-offset="0" max-vertical-offset="706">
+          <folding />
         </state>
       </provider>
     </entry>
