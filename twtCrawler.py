@@ -77,7 +77,9 @@ def TwitterCrawling():
 			Xcordi = 38.907265
 			Ycordi = -77.03649
 			while True:
-				temp = TwitterApiInstance.GetSearch(term = KeyWordsList[ApiMonitor.KeywordToken], lang = 'en',
+				#temp = TwitterApiInstance.GetSearch(term = KeyWordsList[ApiMonitor.KeywordToken], lang = 'en',
+				#                                    count = 100, geocode = (Xcordi, Ycordi, '20mi'))
+				temp = TwitterApiInstance.GetSearch(term = 'crash AND lane AND right', lang = 'en',
 				                                    count = 100, geocode = (Xcordi, Ycordi, '20mi'))
 				word = KeyWordsList[ApiMonitor.KeywordToken]
 				ApiMonitor.NextKey()

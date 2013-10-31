@@ -67,7 +67,7 @@ def apriori(T, minsup):
 		C.append(candidate_gen(F[k - 1]))
 		F.append([])
 		for c in C[k]:
-			count = 0;
+			count = 0
 			for t in T:
 				if compare_list(c, t):
 					count += 1
